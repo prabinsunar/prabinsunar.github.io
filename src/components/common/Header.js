@@ -8,11 +8,20 @@ const Header = () => {
 	return (
 		<div className="header">
 			<nav className="navigation">
-				<NavLink to="/" activeClassName="active" className="normal" exact>
+				<NavLink
+					to="/portfolio/"
+					activeClassName="active"
+					className="normal"
+					exact
+				>
 					Home
 				</NavLink>
 				{' | '}
-				<NavLink to="/projects" activeClassName="active" className="normal">
+				<NavLink
+					to="/portfolio/projects"
+					activeClassName="active"
+					className="normal"
+				>
 					My Projects
 				</NavLink>
 			</nav>
