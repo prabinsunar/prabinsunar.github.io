@@ -1,0 +1,62 @@
+.my-info {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+.my-info > h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.skills {
+	text-align: center;
+	margin-top: 30px;
+}
+.skills > h2,
+.skills > h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+.skills > h2 {
+	letter-spacing: 0.2rem;
+}
+.skills > h3 {
+	line-height: 2.5rem;
+	word-spacing: 1rem;
+	letter-spacing: 0.2rem;
+}
+#button {
+	background-color: transparent;
+	border: 2px solid whitesmoke;
+	color: whitesmoke;
+	font-size: 1.5rem;
+	padding: 5px 12px;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
+}
+
+#button:hover {
+	background-color: #141e30;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+#name {
+	color: #ff2052;
+}
+
+@media only screen and (max-width: 650px) {
+	#button {
+		font-size: 0.7rem;
+	}
+	.skills {
+		font-size: 0.7rem;
+	}
+	.skills > h3 {
+		word-spacing: 0.5rem;
+	}
+}

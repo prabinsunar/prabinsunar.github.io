@@ -1,0 +1,45 @@
+.navigation {
+	float: right;
+	padding: 20px;
+	margin-right: 50px;
+	font-size: x-large;
+	color: #cbcfed;
+	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+}
+.normal {
+	text-decoration: none;
+	color: #7fd2c9;
+}
+
+.active {
+	color: #cbcfed;
+}
+.social {
+	float: left;
+	padding: 20px;
+	margin-left: 50px;
+}
+.social > a {
+	text-decoration: none;
+}
+
+.icons {
+	margin-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	.header {
+		text-align: center;
+	}
+	.navigation {
+		font-size: 1.2rem;
+		float: none;
+		padding: 5px;
+		margin-left: 20%;
+	}
+	.social {
+		padding: 5px;
+		float: none;
+	}
+}

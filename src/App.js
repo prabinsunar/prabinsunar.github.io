@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/common/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import Projects from './components/projects/Projects';
+import PageNotFound from './PageNotFound';
+import Particles from 'react-particles-js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<Header />
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route path="/projects" component={Projects} />
+					<Route component={PageNotFound} />
+				</Switch>
+			</Router>
+			<Particles
+				className="particles"
+				params={{
+					particles: {
+						number: {
+							value: 50,
+						},
+						size: {
+							value: 3,
+						},
+					},
+					interactivity: {
+						events: {
+							onhover: {
+								enable: true,
+								mode: 'repulse',
+							},
+						},
+					},
+				}}
+			/>
+		</div>
+	);
 }
 
 export default App;
