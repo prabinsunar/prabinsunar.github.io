@@ -20,6 +20,7 @@
 }
 .skills > h2 {
 	letter-spacing: 0.2rem;
+	margin-bottom: 1rem;
 }
 .skills > h3 {
 	line-height: 2.5rem;
