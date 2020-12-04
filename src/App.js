@@ -10,7 +10,7 @@ import Particles from 'react-particles-js';
 function App() {
 	return (
 		<div className="App">
-			<Router>
+			<Router basename="/portfolio">
 				<Header />
 				<Switch>
 					<Route exact path="/" component={Home} />
