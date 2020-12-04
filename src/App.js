@@ -13,8 +13,8 @@ function App() {
 			<Router>
 				<Header />
 				<Switch>
-					<Route exact path="/portfolio/" component={Home} />
-					<Route path="/porfolio/projects" component={Projects} />
+					<Route exact path="/" component={Home} />
+					<Route path="/projects" component={Projects} />
 					<Route component={PageNotFound} />
 				</Switch>
 			</Router>
