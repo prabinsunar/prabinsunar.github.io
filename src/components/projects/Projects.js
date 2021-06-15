@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import WeatherImage from '../assets/weather-app.png';
-import RentImage from '../assets/rent-tracker.PNG';
+import RentImage from '../assets/rent-tracker.png';
 
 const Projects = () => {
 	return (
