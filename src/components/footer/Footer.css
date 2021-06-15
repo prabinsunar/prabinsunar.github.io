@@ -1,0 +1,10 @@
+.social {
+	text-align: center;
+}
+
+.social li {
+	display: inline-block;
+	margin-right: 2.5em;
+	margin-left: -1em;
+	font-size: 91%;
+}

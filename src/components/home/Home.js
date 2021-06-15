@@ -1,22 +1,35 @@
 import React from 'react';
 import './Home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
-import { NavLink } from 'react-router-dom';
 
 const Home = () => {
 	return (
-		<div className="my-info">
-			<h1>
-				Hello, I am <span id="name">Prabin Sunar</span>
-			</h1>
-			<NavLink to="/projects" id="button">
-				See my projects <FontAwesomeIcon icon={faAngleDoubleRight} fixedWidth />
-			</NavLink>
-			<div className="skills">
-				<h2>My Skills</h2>
-				<h3> HTML | CSS | Javascript | React | Redux</h3>
-			</div>
+		<div className="parentHeader">
+			<blockquote>
+				Programming isn't about what you know; it's about what you can figure
+				out. ~Chris Pine
+			</blockquote>
+			<p>
+				My name is <strong>Prabin Sunar</strong>. I am an aspiring young
+				individual looking to start my career in web development.
+			</p>
+			<p>
+				{' '}
+				I have knowledge and experience (that I gained working through different
+				projects) in both frontend and backend technologies including, but not
+				limited to:
+			</p>
+			<ul>
+				<li>HTML/CSS</li>
+				<li>Express/Node.js</li>
+				<li>Javascript</li>
+				<li>Ruby on Rails</li>
+				<li>MongoDB</li>
+				<li>React</li>
+			</ul>
+			<p>
+				You can find me on Github and Linkedin by clicking the icons below. Or
+				you can contact me via email: sunarprabin.ps@gmail.com.
+			</p>
 		</div>
 	);
 };

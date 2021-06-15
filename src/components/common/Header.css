@@ -1,45 +1,74 @@
-.navigation {
-	float: right;
-	padding: 20px;
-	margin-right: 50px;
-	font-size: x-large;
-	color: #cbcfed;
-	font-weight: 600;
-	font-family: 'Nunito', sans-serif;
+/* Profile pix */
+
+.avatar {
+	background-image: url('../assets/rent-tracker.PNG');
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
+	position: relative;
+	top: -50px;
+	margin-bottom: -50px;
+	border: 2px solid white;
+	border-radius: 50px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.35);
 }
-.normal {
+
+.header {
+	height: calc(100vh - 120px);
+	width: 100%;
+	max-height: 80px;
+	background-size: cover;
+	background-color: var(--header-color);
+}
+
+/* links */
+a:link,
+a:visited,
+a:active {
+	color: var(--link-color);
 	text-decoration: none;
-	color: #7fd2c9;
 }
 
-.active {
-	color: #cbcfed;
+a:hover,
+a:focus {
+	text-decoration: underline;
 }
-.social {
-	float: left;
-	padding: 20px;
-	margin-left: 50px;
+
+/* Lists */
+
+ul {
+	list-style-type: square;
 }
-.social > a {
+
+/* Navigation */
+
+nav {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+nav a:link,
+nav a:visited,
+nav a:active {
+	color: var(--ft-color);
 	text-decoration: none;
 }
 
-.icons {
-	margin-right: 30px;
+nav a:hover,
+a:focus {
+	color: #999;
+	text-decoration: underline;
 }
 
-@media only screen and (max-width: 600px) {
-	.header {
-		text-align: center;
-	}
-	.navigation {
-		font-size: 1.2rem;
-		float: none;
-		padding: 5px;
-		margin-left: 20%;
-	}
-	.social {
-		padding: 5px;
-		float: none;
-	}
+nav li {
+	display: inline-block;
+	margin-right: 2.5em;
+	margin-left: -1em;
+	font-size: 91%;
+}
+
+#toggleMode {
+	cursor: pointer;
 }

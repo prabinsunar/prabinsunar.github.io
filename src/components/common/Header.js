@@ -1,38 +1,71 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+	faHome,
+	faLaptopCode,
+	faSun,
+	faAddressCard,
+	faMoon,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
+	const [mode, setMode] = useState('true');
+
+	const handleMode = () => {
+		setMode(!mode);
+	};
+
+	useEffect(() => {
+		document.documentElement.className = mode ? 'light' : 'dark';
+	}, [mode]);
 	return (
-		<div className="header">
-			<nav className="navigation">
-				<NavLink to="/" activeClassName="active" className="normal" exact>
-					Home
-				</NavLink>
-				{' | '}
-				<NavLink to="/projects" activeClassName="active" className="normal">
-					My Projects
-				</NavLink>
-			</nav>
-			<nav className="social">
-				<a
-					className="icons"
-					href="https://github.com/prabinsunar"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<FontAwesomeIcon icon={faGithub} color="white" size="2x" />
-				</a>
-				<a
-					className="icons"
-					href="https://www.linkedin.com/in/prabin-sunar-36a991165/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<FontAwesomeIcon icon={faLinkedin} color="white" size="2x" />
-				</a>
+		<div>
+			<div className="header"></div>
+			<div className="avatar"></div>
+			<nav>
+				<ul>
+					<li>
+						<NavLink to="/" activeClassName="active" className="normal" exact>
+							<FontAwesomeIcon icon={faHome} size="2x" className="icons" />
+							<br />
+							Home
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/projects" activeClassName="active" className="normal">
+							<FontAwesomeIcon
+								icon={faLaptopCode}
+								size="2x"
+								className="icons"
+							/>
+							<br /> Projects
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/resume" activeClassName="active" className="normal">
+							<FontAwesomeIcon
+								icon={faAddressCard}
+								size="2x"
+								className="icons"
+							/>
+							<br />
+							Resume
+						</NavLink>
+					</li>
+					<li>
+						<div id="toggleMode" onClick={handleMode}>
+							<FontAwesomeIcon
+								icon={mode ? faSun : faMoon}
+								size="2x"
+								className="icons"
+								title={mode ? 'Toggle to dark mode' : 'Toggle to light mode'}
+							/>
+							<br /> Theme
+						</div>
+					</li>
+				</ul>
 			</nav>
 		</div>
 	);

@@ -1,0 +1,21 @@
+.resume {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+	text-align: center;
+}
+
+.resume img {
+	box-shadow: 0 0 7px 0 rgb(153, 153, 153);
+	border: 5px solid var(--ft-color);
+}
+
+@media (max-width: 832px) {
+	.resume img {
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+}

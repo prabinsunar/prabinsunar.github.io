@@ -5,40 +5,25 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
 import PageNotFound from './PageNotFound';
-import Particles from 'react-particles-js';
+import Footer from './components/footer/Footer';
+import Resume from './components/resume/Resume';
 
 function App() {
 	return (
-		<div className="App">
+		<div className="body">
 			<Router basename="/portfolio">
 				<Header />
-				<Switch>
-					<Route exact path="/" component={Home} />
-					<Route path="/projects" component={Projects} />
-					<Route component={PageNotFound} />
-				</Switch>
+				<div className="container">
+					<Switch>
+						<Route exact path="/" component={Home} />
+						<Route path="/projects" component={Projects} />
+						<Route path="/resume" component={Resume} />
+						<Route component={PageNotFound} />
+					</Switch>
+					<hr />
+					<Footer />
+				</div>
 			</Router>
-			<Particles
-				className="particles"
-				params={{
-					particles: {
-						number: {
-							value: 50,
-						},
-						size: {
-							value: 3,
-						},
-					},
-					interactivity: {
-						events: {
-							onhover: {
-								enable: true,
-								mode: 'repulse',
-							},
-						},
-					},
-				}}
-			/>
 		</div>
 	);
 }
