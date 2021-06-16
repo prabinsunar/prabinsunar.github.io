@@ -6,7 +6,7 @@ const Resume = () => {
 	return (
 		<div className="resume">
 			<img
-				src="/Prabin_Sunar-resume.png"
+				src={require('../../assets/Prabin_Sunar-resume.png')}
 				alt="Resume"
 				width="800"
 				height="1032"

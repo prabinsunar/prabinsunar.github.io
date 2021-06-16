@@ -7,7 +7,7 @@ const Projects = () => {
 		<div className="projects">
 			<div className="projectOne">
 				<img
-					src="/rent-tracker.png"
+					src={require('../../assets/rent-tracker.png')}
 					alt="Project One"
 					height="187.5"
 					width="250"
@@ -67,7 +67,7 @@ const Projects = () => {
 			</div>
 			<div className="projectTwo">
 				<img
-					src="/weather-app.png"
+					src={require('../../assets/weather-app.png')}
 					alt="Project Two"
 					height="187.5"
 					width="250"
