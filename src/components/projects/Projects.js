@@ -1,12 +1,13 @@
 import React from 'react';
 import './Projects.css';
+import pictures from '../../assets/Pictures';
 
 const Projects = () => {
 	return (
 		<div className="projects">
 			<div className="projectOne">
 				<img
-					src="../../assets/rent-tracker.png"
+					src={pictures.profile1}
 					alt="Project One"
 					height="187.5"
 					width="250"
@@ -19,7 +20,7 @@ const Projects = () => {
 					<ul className="projectLinks">
 						<li>
 							<a
-								href="https://github.com/prabinsunar"
+								href="https://github.com/prabinsunar/renttracker"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -29,7 +30,7 @@ const Projects = () => {
 						{' | '}
 						<li>
 							<a
-								href="https://www.linkedin.com/in/prabin-sunar-36a991165/"
+								href="http://ec2-3-18-254-103.us-east-2.compute.amazonaws.com/login"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -66,7 +67,7 @@ const Projects = () => {
 			</div>
 			<div className="projectTwo">
 				<img
-					src="../../assets/weather-app.png"
+					src={pictures.profile2}
 					alt="Project Two"
 					height="187.5"
 					width="250"
@@ -86,7 +87,7 @@ const Projects = () => {
 					<ul className="projectLinks">
 						<li>
 							<a
-								href="https://github.com/prabinsunar"
+								href="https://github.com/prabinsunar/simple-weather-app"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -96,7 +97,7 @@ const Projects = () => {
 						{' | '}
 						<li>
 							<a
-								href="https://www.linkedin.com/in/prabin-sunar-36a991165/"
+								href="https://prabinsunar.github.io/simple-weather-app/"
 								target="_blank"
 								rel="noreferrer"
 							>
