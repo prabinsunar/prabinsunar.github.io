@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import pictures from '../../assets/Pictures';
+import pictures from '../../assets/Pictures';
 
 import {
 	faHome,
@@ -26,7 +26,7 @@ const Header = () => {
 		<div>
 			<div className="header"></div>
 			<div className="avatar">
-				<img src={require('../../assets/MyPhoto.png')} alt="profile" />
+				<img src={pictures.MyPhoto} alt="profile" />
 			</div>
 			<nav>
 				<ul>
