@@ -1,16 +1,13 @@
 import React from 'react';
 import './Projects.css';
+import project1 from '../assets/rent-tracker.png';
+import project2 from '../assets/weather-app.png';
 
 const Projects = () => {
 	return (
 		<div className="projects">
 			<div className="projectOne">
-				<img
-					src="../assets/rent-tracker.png"
-					alt="Project One"
-					height="187.5"
-					width="250"
-				/>
+				<img src={project1} alt="Project One" height="187.5" width="250" />
 				<p>
 					A rent tracking application with CoreUI on front-end and express.js on
 					the back-end.
@@ -65,12 +62,7 @@ const Projects = () => {
 				</ul>
 			</div>
 			<div className="projectTwo">
-				<img
-					src="../assets/weather-app.png"
-					alt="Project Two"
-					height="187.5"
-					width="250"
-				/>
+				<img src={project2} alt="Project Two" height="187.5" width="250" />
 				<p>
 					A simple weather application built with{' '}
 					<a
