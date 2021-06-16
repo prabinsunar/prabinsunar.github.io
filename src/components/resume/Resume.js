@@ -1,11 +1,11 @@
 import React from 'react';
 import './Resume.css';
-import resume from '../assets/Prabin_Sunar-resume.png';
+import pictures from '../assets/Pictures';
 
 const Resume = () => {
 	return (
 		<div className="resume">
-			<img src={resume} alt="Resume" width="800" height="1032" />
+			<img src={pictures.resume} alt="Resume" width="800" height="1032" />
 			<br />
 			<a
 				href="https://drive.google.com/file/d/1xrR8Gs_Xj3OYcg0g8OzAZxVrrhTCbcQs/view?usp=sharing"

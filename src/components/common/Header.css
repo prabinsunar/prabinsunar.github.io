@@ -1,6 +1,8 @@
 .avatar {
-	background-image: url('../assets/MyPhoto.png');
-	background-size: cover;
+	text-align: center;
+}
+.avatar img {
+	object-fit: cover;
 	margin-left: auto;
 	margin-right: auto;
 	height: 100px;
