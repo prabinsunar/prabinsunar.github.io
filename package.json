@@ -1,6 +1,6 @@
 {
-  "homepage": "http://prabinsunar.github.io/portfolio/",
-  "name": "portfolio",
+  "homepage": "http://prabinsunar.github.io/",
+  "name": "prabinsunar.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

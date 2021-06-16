@@ -11,7 +11,7 @@ import Resume from './components/resume/Resume';
 function App() {
 	return (
 		<div className="body">
-			<Router basename="/portfolio">
+			<Router>
 				<Header />
 				<div className="container">
 					<Switch>
