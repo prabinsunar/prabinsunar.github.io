@@ -1,13 +1,12 @@
 import React from 'react';
 import './Projects.css';
-import pictures from '../../assets/Pictures';
 
 const Projects = () => {
 	return (
 		<div className="projects">
 			<div className="projectOne">
 				<img
-					src={pictures.profile1}
+					src="../../assets/rent-tracker.png"
 					alt="Project One"
 					height="187.5"
 					width="250"
@@ -67,7 +66,7 @@ const Projects = () => {
 			</div>
 			<div className="projectTwo">
 				<img
-					src={pictures.profile2}
+					src="../../assets/weather-app.png"
 					alt="Project Two"
 					height="187.5"
 					width="250"

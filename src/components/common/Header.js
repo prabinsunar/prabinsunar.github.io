@@ -3,7 +3,6 @@ import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import pictures from '../../assets/Pictures';
 import {
 	faHome,
 	faLaptopCode,
@@ -26,7 +25,7 @@ const Header = () => {
 		<div>
 			<div className="header"></div>
 			<div className="avatar">
-				<img src={pictures.MyPhoto} alt="profile" />
+				<img src="../../assets/MyPhoto.png" alt="profile" />
 			</div>
 			<nav>
 				<ul>
