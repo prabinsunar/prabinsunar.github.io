@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/common/Header';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Projects from './components/projects/Projects';
 import PageNotFound from './PageNotFound';
